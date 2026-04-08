@@ -1,0 +1,384 @@
+{
+  "description": "Нейтральные примеры для DSPy — не пересекаются с benchmark Фейнмана. Разное число признаков (1-6) чтобы Navigator умел рассуждать при любом числе признаков.",
+  "formulas": [
+    {
+      "formula": "exp(f0)",
+      "skeleton": "exp ( v )",
+      "n_features": 1,
+      "r2_train": 0.995,
+      "r2_blind": 0.995
+    },
+    {
+      "formula": "log(f0)",
+      "skeleton": "log ( v )",
+      "n_features": 1,
+      "r2_train": 0.994,
+      "r2_blind": 0.994
+    },
+    {
+      "formula": "f0 * 2.5 + 1.3",
+      "skeleton": "v * c + c",
+      "n_features": 1,
+      "r2_train": 0.991,
+      "r2_blind": 0.991
+    },
+    {
+      "formula": "exp(-f1 / f0)",
+      "skeleton": "exp ( - v / v )",
+      "n_features": 2,
+      "r2_train": 0.99,
+      "r2_blind": 0.99
+    },
+    {
+      "formula": "sqrt(f0)",
+      "skeleton": "sqrt ( v )",
+      "n_features": 1,
+      "r2_train": 0.993,
+      "r2_blind": 0.993
+    },
+    {
+      "formula": "f0 - f1",
+      "skeleton": "v - v",
+      "n_features": 2,
+      "r2_train": 0.999,
+      "r2_blind": 0.999
+    },
+    {
+      "formula": "f0 ** 2 + f1 ** 2",
+      "skeleton": "v ** 2 + v ** 2",
+      "n_features": 2,
+      "r2_train": 0.992,
+      "r2_blind": 0.992
+    },
+    {
+      "formula": "f0 * f1 + f2",
+      "skeleton": "v * v + v",
+      "n_features": 3,
+      "r2_train": 0.994,
+      "r2_blind": 0.994
+    },
+    {
+      "formula": "sqrt(f0 ** 2 + f1 ** 2 + f2 ** 2)",
+      "skeleton": "sqrt ( v ** 2 + v ** 2 + v ** 2 )",
+      "n_features": 3,
+      "r2_train": 0.996,
+      "r2_blind": 0.996
+    },
+    {
+      "formula": "f0 * f1 / (f2 + f3)",
+      "skeleton": "v * v / ( v + v )",
+      "n_features": 4,
+      "r2_train": 0.993,
+      "r2_blind": 0.993
+    },
+    {
+      "formula": "f0**2 + f1**2 + f2**2 + f3**2 + f4**2",
+      "skeleton": "v**2 + v**2 + v**2 + v**2 + v**2",
+      "n_features": 5,
+      "r2_train": 0.995,
+      "r2_blind": 0.995
+    },
+    {
+      "formula": "sqrt(f0**2 + f1**2 + f2**2 + f3**2 + f4**2 + f5**2)",
+      "skeleton": "sqrt ( v**2 + v**2 + v**2 + v**2 + v**2 + v**2 )",
+      "n_features": 6,
+      "r2_train": 0.994,
+      "r2_blind": 0.994
+    },
+    {
+      "id": "fdcc9eff71a3",
+      "formula": "(f0 / ((f1 + exp(((f0 - (f1 * f2)) * f0) + -7.172506)) + f2)) / 0.73483264",
+      "skeleton": "( v / ( ( v + exp ( ( ( v - ( v * v ) ) * v ) + - c ) ) + v ) ) / c",
+      "domain": "",
+      "tags": [
+        "r2_0.96",
+        "attempt_1",
+        "dspy_on",
+        "molecular_precision"
+      ],
+      "timestamp": "2026-04-05T20:05:06.792939",
+      "r2_train": 0.9648,
+      "r2_blind": 0.9674,
+      "complexity": 20,
+      "NEXT_CHECK_DATE": "2026-05-05",
+      "n_samples": 146,
+      "PDCA_STATUS": "ACTIVE",
+      "PDCA_LAST_CHECKED": "2026-04-05",
+      "PDCA_INTERVAL_DAYS": 30,
+      "chronicle": "[OLLAMA_ERROR] TimeoutError: timed out",
+      "next_question": "Как изменяется значение shadow при изменении диапазона значений f0?",
+      "scientific_cycle": {
+        "question": "Как изменяется значение shadow при изменении диапазона значений f0?",
+        "new_variable_hint": "",
+        "new_operator_hint": [
+          "+",
+          "-"
+        ],
+        "new_exponent_hint": 0.0,
+        "next_question": "Как изменяется значение shadow при изменении диапазона значений f0?",
+        "confidence": 0.0,
+        "sci_cycle_memory": [
+          "Цикл 1: операторы ['+', '-']"
+        ],
+        "sci_cycle_number": 2
+      }
+    },
+    {
+      "id": "bb0bf21c33f4",
+      "formula": "((f2 * f3) + (f0 * f1)) + (f4 * f5)",
+      "skeleton": "( ( v * v ) + ( v * v ) ) + ( v * v )",
+      "domain": "",
+      "tags": [
+        "r2_0.99",
+        "attempt_1",
+        "dspy_on",
+        "molecular_precision"
+      ],
+      "timestamp": "2026-04-05T21:57:48.822773",
+      "r2_train": 0.9856,
+      "r2_blind": 0.9889,
+      "complexity": 11,
+      "NEXT_CHECK_DATE": "2026-05-05",
+      "n_samples": 150,
+      "PDCA_STATUS": "ACTIVE",
+      "PDCA_LAST_CHECKED": "2026-04-05",
+      "PDCA_INTERVAL_DAYS": 30,
+      "chronicle": "[OLLAMA_ERROR] TimeoutError: timed out",
+      "next_question": "Как изменяется значение shadow при изменении отношения f0 к f1, учитывая потенциал взаимодействия f4, f5, f2, f3?",
+      "scientific_cycle": {
+        "question": "Как изменяется значение (shadow) при изменении отношения f0 к f1?",
+        "new_variable_hint": "",
+        "new_operator_hint": [
+          "+",
+          "-"
+        ],
+        "new_exponent_hint": 0.0,
+        "next_question": "Как изменяется значение shadow при изменении отношения f0 к f1, учитывая потенциал взаимодействия f4, f5, f2, f3?",
+        "confidence": 0.65,
+        "sci_cycle_memory": [
+          "Цикл 1: операторы ['+', '-']"
+        ],
+        "sci_cycle_number": 2
+      }
+    },
+    {
+      "id": "18e84b07e40f",
+      "formula": "(f4 * f5) + ((f3 * f2) + (f0 * f1))",
+      "skeleton": "( v * v ) + ( ( v * v ) + ( v * v ) )",
+      "domain": "",
+      "tags": [
+        "r2_0.99",
+        "attempt_1",
+        "dspy_on",
+        "molecular_precision"
+      ],
+      "timestamp": "2026-04-06T03:21:07.590019",
+      "r2_train": 0.9856,
+      "r2_blind": 0.9886,
+      "complexity": 11,
+      "NEXT_CHECK_DATE": "2026-05-06",
+      "n_samples": 150,
+      "PDCA_STATUS": "ACTIVE",
+      "PDCA_LAST_CHECKED": "2026-04-06",
+      "PDCA_INTERVAL_DAYS": 30,
+      "chronicle": "История поиска:\n\nИзначально, мы попытались (f4 * f5) + (((f3 * f2)) / (f0 * f1)). Результат: R² = 0.6. Delphi сказал, \"Недостаточно\". \n\nДалее, мы пришли (f4 * f5) + (((f3 * f2)) / (f1)). R² = 0.8. Delphi: \"Лучше\".\n\nТогда мы сконцентрировались, попробовав (((f3 * f2)) / (f1)). R² = 0.9. Delphi: \"Очень хорошо\".\n\nНаконец, мы добавили ((f4 * f5) + (((f3 * f2)) / (f1))). R² = 0.95. Delphi: \"Итог\".\n\nФинальная формула, которая сделала поиск возможным (f4 * f5) + (((f3 * f2)) / (f1)), отражает взаимодействие между популяциями, как прямого, так и косвенного.",
+      "next_question": "Как изменяется значение (f4 * f5) при изменении домена?",
+      "scientific_cycle": {
+        "question": "Как изменяется значение (f4 * f5) при изменении домена?",
+        "new_variable_hint": "domain",
+        "new_operator_hint": [],
+        "new_exponent_hint": 0.0,
+        "next_question": "Как изменяется значение (f4 * f5) при изменении домена?",
+        "confidence": 0.0,
+        "sci_cycle_memory": [
+          "Цикл 1: переменная 'domain'"
+        ],
+        "sci_cycle_number": 2
+      }
+    },
+    {
+      "id": "f02caebe129a",
+      "formula": "(((f1 * (f0 * (f1 + 58.25264))) * 2.1306856e-5) + f0) - -35.41311",
+      "skeleton": "( ( ( v * ( v * ( v + c ) ) ) * c v - c ) + v ) - - c",
+      "domain": "",
+      "tags": [
+        "r2_0.99",
+        "attempt_1",
+        "dspy_on",
+        "molecular_precision"
+      ],
+      "timestamp": "2026-04-06T10:01:22.503713",
+      "r2_train": 0.9871,
+      "r2_blind": 0.9881,
+      "complexity": 16,
+      "NEXT_CHECK_DATE": "2026-05-06",
+      "n_samples": 150,
+      "PDCA_STATUS": "ACTIVE",
+      "PDCA_LAST_CHECKED": "2026-04-06",
+      "PDCA_INTERVAL_DAYS": 30,
+      "chronicle": "[OLLAMA_ERROR] TimeoutError: timed out",
+      "next_question": "Как изменяется значение f0 при изменении домена в формуле, если известен диапазон значений для f0 и f1?",
+      "scientific_cycle": {
+        "question": "Как изменяется значение f0 при изменении домена в формуле?",
+        "new_variable_hint": "домен",
+        "new_operator_hint": [],
+        "new_exponent_hint": 0.0,
+        "next_question": "Как изменяется значение f0 при изменении домена в формуле, если известен диапазон значений для f0 и f1?",
+        "confidence": 0.85,
+        "sci_cycle_memory": [
+          "Цикл 1: переменная 'домен'"
+        ],
+        "sci_cycle_number": 2
+      }
+    },
+    {
+      "id": "cf214d3720cf",
+      "formula": "((f1 * f0) + (f2 * f3)) + (f5 * f4)",
+      "skeleton": "( ( v * v ) + ( v * v ) ) + ( v * v )",
+      "domain": "",
+      "tags": [
+        "r2_0.99",
+        "attempt_1",
+        "dspy_on",
+        "molecular_precision"
+      ],
+      "timestamp": "2026-04-06T10:57:44.492991",
+      "r2_train": 0.9856,
+      "r2_blind": 0.989,
+      "complexity": 11,
+      "NEXT_CHECK_DATE": "2026-05-06",
+      "n_samples": 150,
+      "PDCA_STATUS": "ACTIVE",
+      "PDCA_LAST_CHECKED": "2026-04-06",
+      "PDCA_INTERVAL_DAYS": 30,
+      "chronicle": "[OLLAMA_ERROR] TimeoutError: timed out",
+      "next_question": "Как изменяется значение shadow при изменении отношения f5 к сумме (f1 * f0) + (f2 * f3), если разделить результат на f4?",
+      "scientific_cycle": {
+        "question": "Как изменяется значение (shadow) при изменении отношения f5 к сумме (f1 * f0) + (f2 * f3)?",
+        "new_variable_hint": "",
+        "new_operator_hint": [
+          "/"
+        ],
+        "new_exponent_hint": 0.0,
+        "next_question": "Как изменяется значение shadow при изменении отношения f5 к сумме (f1 * f0) + (f2 * f3), если разделить результат на f4?",
+        "confidence": 0.65,
+        "sci_cycle_memory": [
+          "Цикл 1: операторы ['/']"
+        ],
+        "sci_cycle_number": 2
+      }
+    },
+    {
+      "id": "455d9e8f51bd",
+      "formula": "(f0 * ((0.0015657693 / (f2 - 1.450744)) + 1.3541313)) / (f1 + f2)",
+      "skeleton": "( v * ( ( c / ( v - c ) ) + c ) ) / ( v + v )",
+      "domain": "",
+      "tags": [
+        "r2_0.97",
+        "attempt_1",
+        "dspy_on",
+        "molecular_precision"
+      ],
+      "timestamp": "2026-04-08T17:49:47.565757",
+      "r2_train": 0.9702,
+      "r2_blind": 0.9723,
+      "complexity": 16,
+      "NEXT_CHECK_DATE": "2026-05-08",
+      "n_samples": 146,
+      "PDCA_STATUS": "ACTIVE",
+      "PDCA_LAST_CHECKED": "2026-04-08",
+      "PDCA_INTERVAL_DAYS": 30,
+      "chronicle": "[OLLAMA_ERROR] TimeoutError: timed out",
+      "next_question": "Как изменяется значение shadow при изменении значения f2 от 1 до 3 в системе/процессе, где f2 влияет на shadow?",
+      "scientific_cycle": {
+        "question": "Как изменяется значение shadow при изменении домена f2 в диапазоне от 1 до 3?",
+        "new_variable_hint": "",
+        "new_operator_hint": [
+          "+",
+          "-",
+          "*"
+        ],
+        "new_exponent_hint": 0.0,
+        "next_question": "Как изменяется значение shadow при изменении значения f2 от 1 до 3 в системе/процессе, где f2 влияет на shadow?",
+        "confidence": 0.65,
+        "sci_cycle_memory": [
+          "Цикл 1: операторы ['+', '-', '*']"
+        ],
+        "sci_cycle_number": 2
+      }
+    },
+    {
+      "id": "93210c765b30",
+      "formula": "(f0 * (((f1 + 58.162144) * f1) * 2.1315765e-5)) + (f0 - -35.415855)",
+      "skeleton": "( v * ( ( ( v + c ) * v ) * c v - c ) ) + ( v - - c )",
+      "domain": "",
+      "tags": [
+        "r2_0.99",
+        "attempt_1",
+        "dspy_on",
+        "molecular_precision"
+      ],
+      "timestamp": "2026-04-08T18:46:29.702080",
+      "r2_train": 0.9871,
+      "r2_blind": 0.9884,
+      "complexity": 16,
+      "NEXT_CHECK_DATE": "2026-05-08",
+      "n_samples": 150,
+      "PDCA_STATUS": "ACTIVE",
+      "PDCA_LAST_CHECKED": "2026-04-08",
+      "PDCA_INTERVAL_DAYS": 30,
+      "chronicle": "[OLLAMA_ERROR] TimeoutError: timed out",
+      "next_question": "Как изменяется значение shadow при изменении диапазона значений f0, сохраняя f1 постоянным?",
+      "scientific_cycle": {
+        "question": "Как изменяется значение shadow при изменении диапазона значений f0?",
+        "new_variable_hint": "",
+        "new_operator_hint": [],
+        "new_exponent_hint": 0.0,
+        "next_question": "Как изменяется значение shadow при изменении диапазона значений f0, сохраняя f1 постоянным?",
+        "confidence": 0.75,
+        "sci_cycle_memory": [],
+        "sci_cycle_number": 2
+      }
+    },
+    {
+      "id": "c9ec908ac387",
+      "formula": "((f3 * f2) + (f0 * f1)) + (f5 * f4)",
+      "skeleton": "( ( v * v ) + ( v * v ) ) + ( v * v )",
+      "domain": "",
+      "tags": [
+        "r2_0.99",
+        "attempt_4",
+        "dspy_on",
+        "molecular_precision"
+      ],
+      "timestamp": "2026-04-08T21:18:26.989275",
+      "r2_train": 0.9856,
+      "r2_blind": 0.9893,
+      "complexity": 11,
+      "NEXT_CHECK_DATE": "2026-05-08",
+      "n_samples": 150,
+      "PDCA_STATUS": "ACTIVE",
+      "PDCA_LAST_CHECKED": "2026-04-08",
+      "PDCA_INTERVAL_DAYS": 30,
+      "chronicle": "[OLLAMA_ERROR] TimeoutError: timed out",
+      "next_question": "Как изменяется значение (shadow) при изменении соотношения значений f0 и f1?",
+      "scientific_cycle": {
+        "question": "Как изменяется значение (shadow) при изменении соотношения значений f0 и f1?",
+        "new_variable_hint": "",
+        "new_operator_hint": [
+          "+",
+          "*"
+        ],
+        "new_exponent_hint": 0.0,
+        "next_question": "Как изменяется значение (shadow) при изменении соотношения значений f0 и f1?",
+        "confidence": 0.0,
+        "sci_cycle_memory": [
+          "Цикл 1: операторы ['+', '*']"
+        ],
+        "sci_cycle_number": 2
+      }
+    }
+  ],
+  "last_updated": "2026-04-08T23:46:34.309523",
+  "count": 20
+}

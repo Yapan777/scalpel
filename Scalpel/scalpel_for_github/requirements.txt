@@ -1,0 +1,14 @@
+# Обязательные зависимости
+numpy>=1.24
+scipy>=1.11
+scikit-learn>=1.3
+pandas>=2.0
+psutil>=5.9
+
+# Тесты
+pytest>=7.4
+pytest-timeout>=2.1
+
+# Опциональные (раскомментировать при необходимости)
+# pysr>=0.19          # требует Julia — см. README_SETUP.md
+# dspy-ai>=2.4        # LLM-роли через Ollama

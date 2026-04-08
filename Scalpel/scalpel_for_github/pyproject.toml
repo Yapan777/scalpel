@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "scalpel"
+version = "10.3.9"
+description = "Universal Scalpel — Self-Evolving Autonomous Mind"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.11",
+    "scikit-learn>=1.3",
+    "pandas>=2.0",
+    "psutil>=5.9",
+]
+
+[project.optional-dependencies]
+# Основной движок (требует Julia)
+pysr = ["pysr>=0.19"]
+# DSPy + LLM-роли
+dspy = ["dspy-ai>=2.4"]
+# Всё сразу
+full = ["scalpel[pysr,dspy]"]
+# Тесты
+dev = [
+    "pytest>=7.4",
+    "pytest-timeout>=2.1",
+]
+
+[project.scripts]
+scalpel = "scalpel.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["scalpel*"]
+
+[tool.setuptools.package-data]
+scalpel = ["*.pdf"]
