@@ -1,0 +1,22 @@
+{
+  "I.6.20": {
+    "name": "Gaussian",
+    "true_formula": "exp(-f0**2/2)/sqrt(2*3.14159)"
+  },
+  "I.9.18": {
+    "name": "Newton 2nd (force)",
+    "true_formula": "f0/(f1**2+f2**2)**(0.5)"
+  },
+  "I.10.7": {
+    "name": "Relativistic Doppler",
+    "true_formula": "f0*(1+f1/f2)/sqrt(1-(f1/f2)**2)"
+  },
+  "I.11.19": {
+    "name": "Wave superposition",
+    "true_formula": "f0*f1+f2*f3+f4*f5"
+  },
+  "I.12.1": {
+    "name": "Coulomb force",
+    "true_formula": "f0*f1*f2/(4*3.14159*f3*f4**2)"
+  }
+}
