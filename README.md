@@ -1,6 +1,9 @@
 # Scalpel
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19476680.svg)](https://doi.org/10.5281/zenodo.19476680)
 
+![Status](https://img.shields.io/badge/status-active%20development-brightgreen)
+> 🔬 Активная разработка — система улучшается с каждым запуском.
+
 **LLM-команда для символьной регрессии. Находит физические законы из зашумлённых данных без знания предметной области.**
 
 *Адель Гилазетдинов, Москва, 2026*
@@ -228,6 +231,8 @@ MIT
 <a name="english"></a>
 
 # Scalpel (English)
+![Status](https://img.shields.io/badge/status-active%20development-brightgreen)
+> 🔬 Active development — the system improves with every run.
 
 **LLM-team symbolic regression. Finds physical laws from noisy data without domain knowledge.**
 
