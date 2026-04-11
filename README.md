@@ -7,7 +7,20 @@
 **LLM-команда для символьной регрессии. Находит физические законы из зашумлённых данных без знания предметной области.**
 
 *Адель Гилазетдинов, Москва, 2026*
+**Версия: v10.44** | Статус: Активная разработка
 
+---
+
+## 🔬 Текущее тестирование
+
+Прямо сейчас идёт честный benchmark на датасете Фейнмана:
+
+- ✅ **2 прогона С командой LLM** (полный pipeline Scalpel, 20 законов)
+- ✅ **2 прогона БЕЗ LLM** (только PySR, те же данные, тот же шум)
+
+Результаты скоро. Это покажет точно что команда LLM добавляет поверх чистой символьной регрессии.
+
+*Обновлено: апрель 2026*
 [English below ↓](#english)
 
 ---
@@ -237,7 +250,20 @@ MIT
 **LLM-team symbolic regression. Finds physical laws from noisy data without domain knowledge.**
 
 *By Adel Gilazetdinov, Moscow, 2026*
+**Version: v10.44** | Status: Active development
 
+---
+
+## 🔬 Current Testing
+
+Right now running a full honest benchmark on the Feynman dataset:
+
+- ✅ **2 runs WITH LLM-team** (full Scalpel pipeline, 20 laws)
+- ✅ **2 runs WITHOUT LLM** (PySR only, same data, same noise)
+
+Results coming soon. This will show exactly what the LLM-team adds over pure symbolic regression.
+
+*Last updated: April 2026*
 ---
 
 ## What is this
